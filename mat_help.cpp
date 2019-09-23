@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include "mat_help.h"
 
-double** matrix_read(FILE* file){
+double** matrix_read(FILE* file, int &N){
     
-    int N;    
     fscanf(file, "%d", &N);
     
     double** matrix = new double*[N];

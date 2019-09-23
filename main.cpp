@@ -3,19 +3,27 @@
 
 int main(){
     
-    /*
+    double **matrix;
+    int N;
+    //double **matrix_old;
+    //double **matrix_new;
+    
     printf("Hello!\n");
+    
+    
+    /*
     printf("1 - matrix from file ('in.txt')\n");
     printf("2 - matrix from function\n");
     
     int input_mode;
     scanf("%d", &input_mode);
     */
-    double **matrix;
-    int N;
-    N = 3;
+    
+    N = 2;
     FILE* file = fopen("in.txt", "r");
-    matrix = matrix_read(file);
+    matrix = matrix_read(file, N);
+    
+    
     /*
     if(input_mode == 1){
         N = matrix_read(file, matrix);
